@@ -1,0 +1,47 @@
+.main{
+
+  height: 400px;
+  width: 400px;
+  /* border: 1px solid black; */
+}
+/* 
+.main1{
+
+  height: 400px;
+  width: 200px;
+  border: 1px solid black;
+} */
+
+.asa{
+  display: flex;
+border: 1px solid black;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.img{
+
+  height: 200px;
+  width: inherit;
+  /* border: 1px solid black; */
+}
+.img img{
+  height: 100%;
+  width: 100%;
+}
+.heading{
+  
+  height: 50px;
+  width: inherit;
+  text-align: center;
+  /* border: 1px solid black; */
+}
+
+#f{
+  margin-left: 40%;
+  margin-top: 60px;
+}
+
+#f1{
+  margin-left: 45%;
+  margin-top: 60px;
+}
