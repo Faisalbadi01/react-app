@@ -1,0 +1,38 @@
+body {
+  background: #fff;
+  font-size: 16px;
+}
+
+.header {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.6em;
+  color: teal;
+}
+
+.counter {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#displayCount {
+  font-size: 2.9em;
+  color: grey;
+}
+
+button {
+  margin-top: 30px;
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+
+.btn,
+.btn:hover,
+.btn:visited,
+.btn:active,
+.btn:focus {
+  background: teal !important;
+  border-color: teal;
+}
