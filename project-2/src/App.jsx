@@ -48,7 +48,7 @@ console.log(state);
         color={'red'}
         loading={2000}
         // cssOverride={override}
-        size={150}
+        size={50}
         aria-label="Loading Spinner"
         data-testid="loader"
       /></div>:
