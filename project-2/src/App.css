@@ -42,7 +42,9 @@ body{
     transform: rotate(360deg);
   }
 }
-
+.fr{
+  margin-left: 46%;
+}
 .card{
 width: 18rem;
 
