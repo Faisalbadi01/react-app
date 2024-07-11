@@ -137,23 +137,7 @@ const handleLoginClick =()=>{
 
 
 
-
-
-  <section class="background-texture"></section>
-  <div class="card-container">
-    <h2>Create Account</h2>
-    <form class="form" onSubmit={handelclick}>
-      <input type="text" name='name'  value={box.name} onChange={handelchange} placeholder="Name" />
-      <input type='email' name='email' value={box.email} className={valid ? "a" : "" } onChange={handelchange} onBlur={handleblur} placeholder="Email" />
-      <input type={sshow} name='password' value={box.password} className={valid ? "a" : ""} onChange={handelchange} onBlur={handleblurps}  placeholder="Password" /><i class="bi bi-eye-fill"  id="sss" onClick={show} ></i>
-      {valid ? <p>Password Must Be 8 letter and special character</p> :""}
-      <button type="submit">SIGN UP</button>
-    </form>
-    <footer>
-    <p >I already have an account.</p>
-    <span className='s' onClick={()=>{setstate(false)}} >Signup Here</span>
-    </footer>
-  </div>
+ 
 
 
 

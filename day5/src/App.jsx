@@ -61,7 +61,7 @@ function counterm() {
 <div className="counter">
   <p><span id="displayCount">{state}</span></p>
   <button className="btn btn-primary "  onClick={counter} id="counter">+</button>
-  <button className="btn btn-primary" onClick={counterm} id="counter1" >-</button>
+  <button className="btn btn-primary"  onClick={counterm} id="counter1" >-</button>
 </div>
 
 

@@ -16,6 +16,8 @@ const Product = () => {
     let [arr,setarr]=useState([]);
 function handlechange(e) {
 
+
+
     let {name,value} = e.target
     
     setstate({
@@ -29,21 +31,27 @@ function handlechange(e) {
 function handelclick() {
     
     setarr([...arr,state])
+
+
+
 }
 
 console.log(arr);
+
+
+
 
   return (
    <div>
         <h1>product</h1>
 
-        <input type="text" name='title' placeholder='enter product title' onChange={handlechange} /> <br /><br />
+        <input type="text" id='t' name='title' placeholder='enter product title' onChange={handlechange} /> <br /><br />
         <input type="text" name='img' placeholder='enter product image' onChange={handlechange} /> <br /><br />
         <input type="text" name='price' placeholder='enter product price' onChange={handlechange} /> <br /><br />
         <button onClick={handelclick}>Summit</button>
         <button onClick={()=>setshow(!show)}>show</button>
 
-
+      
 <div>
  
 
