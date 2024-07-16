@@ -1,15 +1,24 @@
 import React from 'react'
 
-function home() {
+import "./Login.modules.css"
+
+
+import "./flex-slider.css"
+import "./fontawesome.css"
+import "./owl.css"
+
+function Home() {
   return (
     <div>
-      
-      
+
+     
+
+
 
     </div>
 
-    
+
   )
 }
 
-export default home
+export default Home

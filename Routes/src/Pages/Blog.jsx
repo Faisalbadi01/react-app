@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom"
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
+import "../Pages/Login.modules.css"
+
 function Blog() {
 
 
@@ -30,11 +32,14 @@ function Blog() {
   return (
 
     <div id="mai">
+
       <div id="sub1">
+        <br /><br /><br /><br /><br /><br /><br /><br /><br />
         <img src={state.image} alt="" height={500} width={500} /> <br /><br /><br />
       </div>
 
       <div id="sub2">
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         <h1><span className="dd">Price:-</span>{state.title}</h1><br /><br /><br />
 
         <h1><span className="dd">Price:-</span> {state.price}</h1>

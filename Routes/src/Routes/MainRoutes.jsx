@@ -18,13 +18,13 @@ function MainRoutes() {
         <Route path="/abt" element={<About />}></Route>
         <Route path="/pro/:id" element={<Blog />}></Route>
         <Route path="/con" element={<Contact />}></Route>
-        <Route path="/login" element={<Login/>}></Route>
+        <Route path="/login" element={<Login />}></Route>
 
         <Route path="/pro" element={
           <Privateroute>
             <Product />
-            </Privateroute>
-          }></Route>
+          </Privateroute>
+        }></Route>
 
 
         <Route path="*" element={<Error />}></Route>

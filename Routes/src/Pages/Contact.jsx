@@ -2,7 +2,7 @@ import { useState } from "react"
 import "./Login.modules.css"
 import { useNavigate } from "react-router-dom"
 
-
+import Swal from 'sweetalert2'
 const obj = {
 
   email: "",
@@ -53,6 +53,16 @@ function Contact() {
       })
 
 
+
+    Swal.fire({
+      icon: "success",
+      title: "Success",
+      text: "Login Successfully Done....",
+      footer: '<a href="#">Why do I have this issue?</a>'
+    });
+
+
+
     navigate("/login")
   }
 
@@ -62,22 +72,38 @@ function Contact() {
     <>
 
 
+      <div class="page-heading contact-heading header-text">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="text-content">
+                <h4>Signup</h4>
+                <h2>let’s get in touch</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
       <body className="d">
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <div className="container " >
+        <br /><br /><br /><br /><br /><br />
+        <div className="container border " >
           <div className="login-box fai">
             <h1>Singup</h1>
             <form action="#" method="POST" onSubmit={handelclick}>
               <div className="textbox">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required onChange={handlechange} />
+                <input type="email" id="email" name="email" placeholder="Enter your email" required onChange={handlechange} className="form-control" />
               </div>
+              <br />
               <div className="textbox">
                 <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Enter your password" required onChange={handlechange} />
+                <input type="password" id="password" name="password" placeholder="Enter your password" className="form-control" required onChange={handlechange} />
               </div>
-              <button type="submit" className="tn">Sumbit</button>
-              <a href="" className="forgot">Forgot Password?</a>
+              <br /><br />
+              <button type="submit" className="tn form-control btn btn-primary">Sumbit</button><br /><br />
+              <a href="" className="forgot ">Forgot Password?</a>
             </form>
           </div>
         </div>
