@@ -3,7 +3,7 @@ import { addDoc, collection } from 'firebase/firestore'
 import React, { useState } from 'react'
 import { db } from '../firebase/Firebase'
 
-
+import Swal from 'sweetalert2'
 
 
 function Form() {
@@ -23,7 +23,7 @@ function Form() {
 
 
 
-  
+
 
 
   const handlesumbit = async (e) => {
@@ -48,9 +48,12 @@ function Form() {
     // console.log(d);
 
 
-    alert("data added")
+    Swal.fire({
+      icon: "success",
+      title: "Success",
+      text: "Add Successfully Done....",
 
-
+    });
 
     setname("")
     setimage("")

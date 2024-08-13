@@ -16,7 +16,7 @@ function MainRoutes() {
                 <Route path='/h' element={<Home />}></Route>
                 <Route path='/form' element={<Form />}></Route>
                 <Route path='/tbl' element={<Table />} ></Route>
-                <Route path='/edit' element={<Eddit />} ></Route>
+                <Route path='/edit/:id' element={<Eddit />} ></Route>
 
             </Routes>
 
